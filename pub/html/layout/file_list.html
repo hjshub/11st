@@ -1,0 +1,231 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>파일 리스트</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<script src="../js/jquery-1.11.3.min.js"></script>
+		<script src="../js/jquery.easing.1.3.min.js"></script>
+		<script src="../js/common.js"></script>
+		<link rel="stylesheet" href="../css/feCommon.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR" rel="stylesheet">
+	</head>
+	<body>	
+		<div id="wrap">
+			<div id="container" style="width:1200px;margin:50px auto;padding:0">
+				<main id="content" class="mainCont">
+					<div class="heading heading-depth01">
+						<h2 class="title">파일리스트</h2>
+					</div>
+					<div class="listBoard mr_t">
+						<div class="table_type01">
+							<table cellspacing='0' cellpadding='0' border="0">
+								<colgroup>
+									<col style="width:6%">
+									<col style="width:10%">
+									<col style="width:11%">
+									<col style="width:13%">
+									<col style="width:27%">
+									<col style="width:25%">
+									<col style="width:8%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>NO.</th>
+										<th>구분</th>
+										<th></th>
+										<th></th>	
+										<th>파일 경로</th>
+										<th>업데이트 내용</th>
+										<th>최근 업데이트</th>
+									</tr>	
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>로그인</td>
+										<td colspan="2">&nbsp;</td>
+										<td><a href="login.html">login.html</a></td>
+										<td></td>
+										<td>2019-01-16</td>										
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>메인</td>
+										<td colspan="2">&nbsp;</td>
+										<td><a href="main.html">main.html</a></td>
+										<td>하단 마스터 관리자 코멘트 박스 수정</td>
+										<td>2019-02-01</td>										
+									</tr>
+									<tr>
+										<td rowspan="4">3</td>
+										<td rowspan="4">언론정보</td>
+										<td colspan="2">리스트 페이지</td>
+										<td><a href="layout01_list.html">layout01_list.html</a></td>
+										<td>자동완성된 불필요 태그 제거<br/>기자DB엑셀 등록 폼 추가</td>
+										<td>2019-01-30</td>										
+									</tr>
+									<tr>
+										<td colspan="2">등록 페이지</td>
+										<td><a href="layout01_register.html">layout01_register.html</a></td>
+										<td>자동완성된 불필요 태그 제거<br/>최근 업데이트 날짜 셀렉트 박스 제거</td>
+										<td>2019-01-31</td>											
+									</tr>
+									<tr>
+										<td colspan="2">수정 페이지</td>
+										<td><a href="layout01_modify.html">layout01_modify.html</a></td>
+										<td>자동완성된 불필요 태그 제거<br/>최근 업데이트 날짜 셀렉트 박스 제거</td>
+										<td>2019-01-31</td>										
+									</tr>	
+									<tr>
+										<td colspan="2">상세뷰</td>
+										<td><a href="layout01_detail.html">layout01_detail.html</a></td>
+										<td>자동완성된 불필요 태그 제거<br/>최근 업데이트 날짜 레이아웃 수정</td>
+										<td>2019-01-31</td>										
+									</tr>
+									<tr>
+										<td rowspan="4">4</td>
+										<td rowspan="4">보도자료</td>
+										<td colspan="2">리스트 페이지</td>
+										<td><a href="layout02_list.html">layout02_list.html</a></td>
+										<td>자동완성된 불필요 태그 제거</td>
+										<td>2019-01-31</td>										
+									</tr>
+									<tr>
+										<td colspan="2">등록 페이지</td>
+										<td><a href="layout02_register.html">layout02_register.html</a></td>
+										<td>자동완성된 불필요 태그 제거<br/>최근 업데이트 날짜 셀렉트 박스 제거</td>
+										<td>2019-01-31</td>										
+									</tr>
+									<tr>
+										<td colspan="2">수정 페이지</td>
+										<td><a href="layout02_modify.html">layout02_modify.html</a></td>
+										<td>자동완성된 불필요 태그 제거<br/>최근 업데이트 날짜 셀렉트 박스 제거</td>
+										<td>2019-01-31</td>										
+									</tr>	
+									<tr>
+										<td colspan="2">상세뷰</td>
+										<td><a href="layout02_detail.html">layout02_detail.html</a></td>
+										<td>자동완성된 불필요 태그 제거<br/>최근 업데이트 날짜 레이아웃 수정</td>
+										<td>2019-01-31</td>										
+									</tr>
+									<tr>
+										<td rowspan="4">5</td>
+										<td rowspan="4">취재협조<br/>ISSUE<br/>참고자료<br/>동향</td>
+										<td colspan="2">리스트 페이지</td>
+										<td><a href="layout03_list.html">layout03_list.html</a></td>
+										<td>자동완성된 불필요 태그 제거</td>
+										<td>2019-01-31</td>										
+									</tr>
+									<tr>
+										<td colspan="2">등록 페이지</td>
+										<td><a href="layout03_register.html">layout03_register.html</a></td>
+										<td>자동완성된 불필요 태그 제거<br/>최근 업데이트 날짜 셀렉트 박스 제거</td>
+										<td>2019-01-31</td>										
+									</tr>
+									<tr>
+										<td colspan="2">수정 페이지</td>
+										<td><a href="layout03_modify.html">layout03_modify.html</a></td>
+										<td>자동완성된 불필요 태그 제거<br/>최근 업데이트 날짜 셀렉트 박스 제거</td>
+										<td>2019-01-31</td>										
+									</tr>	
+									<tr>
+										<td colspan="2">상세뷰</td>
+										<td><a href="layout03_detail.html">layout03_detail.html</a></td>
+										<td>자동완성된 불필요 태그 제거<br/>최근 업데이트 날짜 레이아웃 수정</td>
+										<td>2019-01-31</td>										
+									</tr>
+									<tr>
+										<td rowspan="3">6</td>
+										<td rowspan="3">계정관리</td>
+										<td colspan="2">리스트 페이지</td>
+										<td><a href="member_list.html">member_list.html</a></td>
+										<td></td>
+										<td>2019-01-17</td>										
+									</tr>
+									<tr>
+										<td colspan="2">등록 페이지</td>
+										<td><a href="member_register.html">member_register.html</a></td>
+										<td>자동완성된 불필요 태그 제거</td>
+										<td>2019-01-31</td>										
+									</tr>
+									<tr>
+										<td colspan="2">수정 페이지</td>
+										<td><a href="member_modify.html">member_modify.html</a></td>
+										<td>자동완성된 불필요 태그 제거</td>
+										<td>2019-01-31</td>										
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>회원정보 수정</td>
+										<td colspan="2">&nbsp;</td>
+										<td><a href="personal_info.html">personal_info.html</a></td>
+										<td>자동완성된 불필요 태그 제거</td>
+										<td>2019-01-31</td>										
+									</tr>
+									<tr>
+										<td rowspan="4">8</td>
+										<td rowspan="4">설정</td>
+										<td rowspan="2">게시판 관리</td>
+										<td>게시판 리스트</td>
+										<td><a href="board_list.html">board_list.html</a></td>
+										<td></td>
+										<td>2019-01-17</td>										
+									</tr>
+									<tr>
+										<td>게시판 설정</td>
+										<td><a href="board_set.html">board_set.html</a></td>
+										<td></td>
+										<td>2019-01-21</td>										
+									</tr>
+									<tr>
+										<td rowspan="2">메뉴관리</td>
+										<td>메뉴 리스트</td>
+										<td><a href="menu_list.html">menu_list.html</a></td>
+										<td>자동완성된 불필요 태그 제거</td>
+										<td>2019-01-31</td>										
+									</tr>
+									<tr>
+										<td>메뉴 설정</td>
+										<td><a href="menu_set.html">menu_set.html</a></td>
+										<td>자동완성된 불필요 태그 제거</td>
+										<td>2019-01-31</td>										
+									</tr>
+									<tr>
+										<td rowspan="4">9</td>
+										<td rowspan="4">통합검색</td>
+										<td colspan="2">리스트 페이지</td>
+										<td><a href="search.html">search.html</a></td>
+										<td>페이징 제거 레이아웃 수정</td>
+										<td>2019-01-30</td>										
+									</tr>
+									<tr>
+										<td colspan="2">검색어 결과 없을 시</td>
+										<td><a href="search_none.html">search_none.html</a></td>
+										<td>페이지 추가</td>
+										<td>2019-01-31</td>										
+									</tr>
+									<tr>
+										<td colspan="2">보도자료 검색결과 상세</td>
+										<td><a href="search_detail01.html">search_detail01.html</a></td>
+										<td>페이지 추가</td>
+										<td>2019-01-30</td>										
+									</tr>	
+									<tr>
+										<td colspan="2">기자정보 검색결과 상세</td>
+										<td><a href="search_detail02.html">search_detail02.html</a></td>
+										<td>페이지 추가</td>
+										<td>2019-01-30</td>										
+									</tr>							
+								</tbody>
+							</table>
+						</div>
+						<!--table_type01-->
+					</div>
+				</main>
+			</div>		
+		</div>
+	</body>
+</html>	
+	  	

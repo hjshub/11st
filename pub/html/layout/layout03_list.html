@@ -1,0 +1,213 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>취재협조 - 리스트</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<script src="../js/jquery-1.11.3.min.js"></script>
+		<script src="../js/jquery.easing.1.3.min.js"></script>
+		<script src="../js/common.js"></script>
+		<link rel="stylesheet" href="../css/feCommon.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR" rel="stylesheet">
+	</head>
+	<body>	
+		<div id="wrap">
+			<a href="#content" class="skipToContent">본문으로 바로가기</a>
+			<!-- #header -->
+			<header id="header" class="header">
+				<h1 class="logo"><a href="main.html"><img src="../img/common/logo.png" alt="11번가"></a></h1>
+				<div class="searchWrap">
+					<h2 class="hideEl">전체검색</h2>
+					<form action="/" method="">
+						<fieldset>
+							<legend>전체 검색</legend>
+							<label for="totSearchInp" class="hideEl">검색어 입력</label>
+							<input type="text" id="totSearchInp" class="totSearchInp" title="전체 검색" placeholder="검색어를 입력해주세요.">
+							<button type="submit" class="hideTxt">검색</button>
+						</fieldset>
+					</form>
+				</div>
+					
+				<div class="gnbWrap">
+					<div class="topMenuWrap">
+						<span>
+							<img src="https://dummyimage.com/60x60/e0002a/fff" alt="">
+						</span>
+						<span class="user">
+							<strong>심재윤 님</strong>
+							환영합니다!
+						</span>
+						<!-- topMenu -->
+						<ul class="topMenu">
+							<li><a href="/">정보수정</a></li>
+							<li><a href="/">로그아웃</a></li>
+						</ul>
+						<!-- //topMenu -->
+					</div> 
+					
+					<nav class="gnb">
+						<h2 class="hideEl">메뉴 네비게이션</h2>
+						<ul class="gnbList">
+							<li><a href="layout01_list.html">언론정보</a></li>
+							<li><a href="layout02_list.html">보도자료</a></li>
+							<li class="current"><a href="layout03_list.html">취재협조</a></li>
+							<li><a href="layout04_list.html">ISSUE</a></li>
+							<li><a href="layout05_list.html">참고자료</a></li>
+							<li><a href="layout06_list.html">동향</a></li>
+							<li><a href="member_list.html">계정관리</a></li>
+							<li>
+								<a href="javascript:return false;">설정</a>
+								<ul>
+									<li><a href="board_list.html">게시판 관리</a></li>
+									<li><a href="menu_list.html">메뉴 관리</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<p class="copyright">Copyright © 2018 11Street<br>Co.,Ltd. All Rights Reserved.</p>
+				</div>	
+			</header>		
+			<!--// #header -->
+
+			<div id="container">
+				<main id="content" class="mainCont">
+					<div class="heading heading-depth01">
+						<h2 class="title">취재협조</h2>
+					</div>
+					<div class="listBoard mr_t">
+						<form action="/" method="">
+							<div class="subBoard">
+								<dl class="cate_area">
+									<dt>분류</dt>
+									<dd class="selected"><a href="#">전체(00)</a></dd>
+									<dd><a href="#">Seasonal(00)</a></dd>
+									<dd><a href="#">서비스(00)</a></dd>
+								</dl>
+								<dl class="search_area">
+									<dt>검색</dt>
+									<dd>
+										<select>
+											<option value="">전체</option>
+											<option value="">제목</option>
+											<option value="">내용</option>
+											<option value="">작성자</option>
+										</select>
+									</dd>
+									<dd>
+										<input type="text" class=""><button type="submit" class="button_searh">검색</button>
+									</dd>
+								</dl>
+							</div>
+							<div class="table_type01">
+								<table cellspacing='0' cellpadding='0' border="0">
+									<colgroup>
+										<col style="width:6%">
+										<col style="width:6%">
+										<col style="width:16%">
+										<col style="width:42%">
+										<col style="width:10%">
+										<col style="width:10%">
+										<col style="width:10%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">&nbsp;</th>
+											<th scope="col">순번</th>
+											<th scope="col">구분</th>
+											<th scope="col">제목</th>
+											<th scope="col">파일</th>
+											<th scope="col">등록일</th>
+											<th scope="col">작성자</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="check_info">
+												<span>
+													<input id="chk_0" type="checkbox" name="chk[00]" value="" checked>
+													<label for="chk_0"></label>	
+												</span>											
+											</td>
+											<td>10</td>
+											<td>Seasonal</td>
+											<td class="left"><a href="layout03_detail.html">게시글 제목</a></td>
+											<td><img src="../img/common/bg_file.png"></td>
+											<td>2018.12.14</td>
+											<td>마스터</td>
+										</tr>
+										<tr>
+											<td class="check_info">
+												<span>
+													<input id="chk_0" type="checkbox" name="chk[00]" value="">
+													<label for="chk_0"></label>	
+												</span>											
+											</td>
+											<td>9</td>
+											<td>Seasonal</td>
+											<td class="left"><a href="layout03_detail.html">게시글 제목</a></td>
+											<td><img src="../img/common/bg_file.png"></td>
+											<td>2018.12.14</td>
+											<td>마스터</td>
+										</tr>
+										<tr>
+											<td class="check_info">
+												<span>
+													<input id="chk_0" type="checkbox" name="chk[00]" value="">
+													<label for="chk_0"></label>	
+												</span>											
+											</td>
+											<td>8</td>
+											<td>서비스</td>
+											<td class="left"><a href="layout03_detail.html">게시글 제목</a></td>
+											<td><img src="../img/common/bg_file.png"></td>
+											<td>2018.12.14</td>
+											<td>마스터</td>
+										</tr>
+										<tr>
+											<td class="check_info">
+												<span>
+													<input id="chk_0" type="checkbox" name="chk[00]" value="">
+													<label for="chk_0"></label>	
+												</span>											
+											</td>
+											<td>7</td>
+											<td>서비스</td>
+											<td class="left"><a href="layout03_detail.html">게시글 제목</a></td>
+											<td></td>
+											<td>2018.12.14</td>
+											<td>마스터</td>
+										</tr>																				
+									</tbody>
+								</table>
+							</div><!--table_type01-->
+						</form>
+					</div>
+					<div class="btnWrap alignR">
+						<button type="button" class="button">선택삭제</button>
+						<a href="layout03_register.html" class="button-red">등록</a>	
+					</div>
+					<div class="paging">
+						<span class="first"><a href="#"><img src="../img/common/bg_first.png" alt="처음"></a></span>
+						<span class="prev"><a href="#"><img src="../img/common/bg_prev.png" alt="이전"></a></span>
+						<ul>
+							<li><a href="#" class="selected">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">6</a></li>
+							<li><a href="#">7</a></li>
+							<li><a href="#">8</a></li>
+							<li><a href="#">9</a></li>
+							<li><a href="#">10</a></li>
+						</ul>
+						<span class="next"><a href=""><img src="../img/common/bg_nxt.png" alt="다음"></a></span>
+						<span class="end"><a href=""><img src="../img/common/bg_end.png" alt="끝"></a></span>
+					</div>
+				</main>
+			</div>		
+		</div>
+	</body>
+</html>	
+	  	

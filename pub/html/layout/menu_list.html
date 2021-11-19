@@ -1,0 +1,195 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>메뉴관리 - 리스트</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<script src="../js/jquery-1.11.3.min.js"></script>
+		<script src="../js/jquery.easing.1.3.min.js"></script>
+		<script src="../js/common.js"></script>
+		<link rel="stylesheet" href="../css/feCommon.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR" rel="stylesheet">
+	</head>
+	<body>	
+		<div id="wrap">
+			<a href="#content" class="skipToContent">본문으로 바로가기</a>
+			<!-- #header -->
+			<header id="header" class="header">
+				<h1 class="logo"><a href="main.html"><img src="../img/common/logo.png" alt="11번가"></a></h1>
+				<div class="searchWrap">
+					<h2 class="hideEl">전체검색</h2>
+					<form action="/" method="">
+						<fieldset>
+							<legend>전체 검색</legend>
+							<label for="totSearchInp" class="hideEl">검색어 입력</label>
+							<input type="text" id="totSearchInp" class="totSearchInp" title="전체 검색" placeholder="검색어를 입력해주세요.">
+							<button type="submit" class="hideTxt">검색</button>
+						</fieldset>
+					</form>
+				</div>
+					
+				<div class="gnbWrap">
+					<div class="topMenuWrap">
+						<span>
+							<img src="https://dummyimage.com/60x60/e0002a/fff" alt="">
+						</span>
+						<span class="user">
+							<strong>심재윤 님</strong>
+							환영합니다!
+						</span>
+						<!-- topMenu -->
+						<ul class="topMenu">
+							<li><a href="/">정보수정</a></li>
+							<li><a href="/">로그아웃</a></li>
+						</ul>
+						<!-- //topMenu -->
+					</div> 					
+					<nav class="gnb">
+						<h2 class="hideEl">메뉴 네비게이션</h2>
+						<ul class="gnbList">
+							<li><a href="layout01_list.html">언론정보</a></li>
+							<li><a href="layout02_list.html">보도자료</a></li>
+							<li><a href="layout03_list.html">취재협조</a></li>
+							<li><a href="layout04_list.html">ISSUE</a></li>
+							<li><a href="layout05_list.html">참고자료</a></li>
+							<li><a href="layout06_list.html">동향</a></li>
+							<li><a href="member_list.html">계정관리</a></li>
+							<li class="current">
+								<a href="javascript:return false;">설정</a>
+								<ul>
+									<li><a href="board_list.html">게시판 관리</a></li>
+									<li class="on"><a href="menu_list.html">메뉴 관리</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<p class="copyright">Copyright © 2018 11Street<br>Co.,Ltd. All Rights Reserved.</p>
+				</div>	
+			</header>		
+			<!--// #header -->
+
+			<div id="container">
+				<main id="content" class="mainCont">
+					<div class="heading heading-depth01">
+						<h2 class="title">메뉴관리</h2>
+					</div>
+					<div class="listBoard">
+						<form action="/" method="">
+							<div class="subBoard">
+								<ol>
+									<li>1. [등록] 버튼을 클릭하여 신규 메뉴를 등록 하실 수 있습니다.</li>	
+									<li>2. ‘메뉴명’을 클릭하여 설정한 내용을 조회하고, [수정]할 수 있습니다.</li>
+								</ol>
+							</div>
+							<div class="table_type01" id="setMenu">
+								<table cellspacing='0' cellpadding='0' border="0">
+									<colgroup>
+										<col style="width:12%">
+										<col style="width:22%">
+										<col style="width:22%">
+										<col style="width:8%">
+										<col style="width:10%">
+										<col style="width:14%">
+										<col style="width:12%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">메뉴코드</th>
+											<th scope="col">메뉴명</th>
+											<th scope="col">링크 및 폴더명</th>
+											<th scope="col">접근권한<br/>설정여부</th>
+											<th scope="col">사용여부</th>
+											<th scope="col">등록일자</th>
+											<th scope="col">순서변경</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>180100</td>
+											<td>언론정보</td>
+											<td>bbs01</td>
+											<td>Y</td>
+											<td>Y</td>
+											<td>2018-12-24</td>
+											<td class="index">
+												<span onclick="menuSet(this,'up');"><img src="../img/common/bg_arr_up.png"></span>
+												<span onclick="menuSet(this,'down');"><img src="../img/common/bg_arr_down.png"></span>
+											</td>
+										</tr>
+										<tr>
+											<td>180200</td>
+											<td>보도자료</td>
+											<td>bbs02</td>
+											<td>Y</td>
+											<td>Y</td>
+											<td>2018-12-24</td>
+											<td class="index">
+												<span onclick="menuSet(this,'up');"><img src="../img/common/bg_arr_up.png"></span>
+												<span onclick="menuSet(this,'down');"><img src="../img/common/bg_arr_down.png"></span>
+											</td>
+										</tr>
+										<tr>
+											<td>180300</td>
+											<td>취재협조</td>
+											<td>bbs03</td>
+											<td>Y</td>
+											<td>Y</td>
+											<td>2018-12-24</td>
+											<td class="index">
+												<span onclick="menuSet(this,'up');"><img src="../img/common/bg_arr_up.png"></span>
+												<span onclick="menuSet(this,'down');"><img src="../img/common/bg_arr_down.png"></span>
+											</td>
+										</tr>
+										<tr>
+											<td>180400</td>
+											<td>ISSUE</td>
+											<td>bbs04</td>
+											<td>Y</td>
+											<td>Y</td>
+											<td>2018-12-24</td>
+											<td class="index">
+												<span onclick="menuSet(this,'up');"><img src="../img/common/bg_arr_up.png"></span>
+												<span onclick="menuSet(this,'down');"><img src="../img/common/bg_arr_down.png"></span>
+											</td>
+										</tr>
+										<tr>
+											<td>180500</td>
+											<td>참고자료</td>
+											<td>bbs05</td>
+											<td>Y</td>
+											<td>N</td>
+											<td>2018-12-24</td>
+											<td class="index">
+												<span onclick="menuSet(this,'up');"><img src="../img/common/bg_arr_up.png"></span>
+												<span onclick="menuSet(this,'down');"><img src="../img/common/bg_arr_down.png"></span>
+											</td>
+										</tr>
+										<tr>
+											<td>180600</td>
+											<td>동향</td>
+											<td>bbs06</td>
+											<td>Y</td>
+											<td>N</td>
+											<td>2018-12-24</td>
+											<td class="index">
+												<span onclick="menuSet(this,'up');"><img src="../img/common/bg_arr_up.png"></span>
+												<span onclick="menuSet(this,'down');"><img src="../img/common/bg_arr_down.png"></span>
+											</td>
+										</tr>
+										
+									</tbody>
+								</table>
+							</div><!--table_type01-->
+						</form>
+					</div>
+					<div class="btnWrap alignR">
+						<a href="menu_set.html" class="button-red">등록</a>	
+						<button type="submit" class="button">순서저장</button>
+					</div>
+				</main>
+			</div>		
+		</div>
+	</body>
+</html>	
+	  	

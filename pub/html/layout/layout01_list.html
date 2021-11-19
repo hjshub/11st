@@ -1,0 +1,366 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>기자정보 - 리스트</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<script src="../js/jquery-1.11.3.min.js"></script>
+		<script src="../js/jquery.easing.1.3.min.js"></script>
+		<script src="../js/common.js"></script>
+		<link rel="stylesheet" href="../css/feCommon.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR" rel="stylesheet">
+	</head>
+	<body>	
+		<div id="wrap">
+			<a href="#content" class="skipToContent">본문으로 바로가기</a>
+			<!-- #header -->
+			<header id="header" class="header">
+				<h1 class="logo"><a href="main.html"><img src="../img/common/logo.png" alt="11번가"></a></h1>
+				<div class="searchWrap">
+					<h2 class="hideEl">전체검색</h2>
+					<form action="/" method="">
+						<fieldset>
+							<legend>전체 검색</legend>
+							<label for="totSearchInp" class="hideEl">검색어 입력</label>
+							<input type="text" id="totSearchInp" class="totSearchInp" title="전체 검색" placeholder="검색어를 입력해주세요.">
+							<button type="submit" class="hideTxt">검색</button>
+						</fieldset>
+					</form>
+				</div>
+					
+				<div class="gnbWrap">
+					<div class="topMenuWrap">
+						<span>
+							<img src="https://dummyimage.com/60x60/e0002a/fff" alt="">
+						</span>
+						<span class="user">
+							<strong>심재윤 님</strong>
+							환영합니다!
+						</span>
+						<!-- topMenu -->
+						<ul class="topMenu">
+							<li><a href="/">정보수정</a></li>
+							<li><a href="/">로그아웃</a></li>
+						</ul>
+						<!-- //topMenu -->
+					</div> 					
+					<nav class="gnb">
+						<h2 class="hideEl">메뉴 네비게이션</h2>
+						<ul class="gnbList">
+							<li class="current"><a href="layout01_list.html">언론정보</a></li>
+							<li><a href="layout02_list.html">보도자료</a></li>
+							<li><a href="layout03_list.html">취재협조</a></li>
+							<li><a href="layout04_list.html">ISSUE</a></li>
+							<li><a href="layout05_list.html">참고자료</a></li>
+							<li><a href="layout06_list.html">동향</a></li>
+							<li><a href="member_list.html">계정관리</a></li>
+							<li>
+								<a href="javascript:return false;">설정</a>
+								<ul>
+									<li><a href="board_list.html">게시판 관리</a></li>
+									<li><a href="menu_list.html">메뉴 관리</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<p class="copyright">Copyright © 2018 11Street<br>Co.,Ltd. All Rights Reserved.</p>
+				</div>	
+			</header>		
+			<!--// #header -->
+
+			<div id="container">
+				<main id="content" class="mainCont">
+					<div class="heading heading-depth01">
+						<h2 class="title">기자DB 엑셀 관리</h2>
+					</div>
+					<div class="listBoard mr_b_w">
+
+						<!--첨부파일 없을 시-->
+						<div class="subBoard">
+							<form action="/" method="">
+								<dl class="regist_file">
+									<dt>기자DB 엑셀</dt>
+									<dd>
+										<div class="file_name file02"><input type="text" class="name" value="선택된 파일이 없습니다." disabled/></div>
+										<div class="submit">
+											<a class="button" >등록</a>
+										</div>								
+									</dd>
+								</dl>
+							</form>
+						</div>
+
+						<!--등록 버튼 클릭시 노출 폼-->
+						<div class="subBoard">
+							<form action="/" method="">
+								<dl class="regist_file">
+									<dt>기자DB 엑셀</dt>
+									<dd>
+										<div class="submit left">
+											<label class="button" >파일선택<input type="file" value="" onchange="fileCheck(this,'type2','file02')"/></label>
+										</div>
+										<div class="file_name file02 border"><input type="text" class="name" value="선택된 파일이 없습니다." disabled/></div>
+										<div class="submit mid">
+											<a class="button">취소</a>
+											<a class="button-red">저장</a>
+										</div>						
+									</dd>
+								</dl>
+							</form>
+						</div>
+						
+						<!--첨부파일 있을 시 수정 및 삭제-->
+						<div class="subBoard">
+							<form action="/" method="">
+								<dl class="regist_file">
+									<dt>기자DB 엑셀</dt>
+									<dd>
+										<div class="file_name file02"><input type="text" class="name" value="선택된 파일이 없습니다." disabled/></div>
+										<div class="submit mid">
+											<a class="button">수정</a>
+											<a class="button">삭제</a>
+										</div>
+										<div class="name">
+											<span>2019-01-30</span>
+											<span>심재윤</span>
+										</div>								
+									</dd>
+								</dl>
+							</form>
+						</div>
+					</div>
+					<div class="heading heading-depth02">
+						<h2 class="title">기자 정보 관리</h2>
+					</div>
+					<div class="listBoard mr_t">
+						<form action="/" method="">
+							<div class="subBoard">
+								<dl class="cate_area">
+									<dt>분류</dt>
+									<dd class="selected"><a href="#">전체(00)</a></dd>
+									<dd><a href="#">기자정보(00)</a></dd>
+								</dl>
+								<dl class="search_area">
+									<dt>검색</dt>
+									<dd>
+										<select>
+											<option value="">전체</option>
+											<option value="">이름</option>
+											<option value="">회사</option>
+											<option value="">연락처</option>
+										</select>
+									</dd>
+									<dd>
+										<input type="text" class=""><button type="submit" class="button_searh">검색</button>
+									</dd>
+								</dl>
+							</div>
+							<div class="table_type01">
+								<table cellspacing='0' cellpadding='0' border="0">
+									<colgroup>
+										<col style="width:6%">
+										<col style="width:6%">
+										<col style="width:8%">
+										<col style="width:12%">
+										<col style="width:29%">
+										<col style="width:16%">
+										<col style="width:13%">
+										<col style="width:10%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">&nbsp;</th>
+											<th scope="col">번호</th>
+											<th scope="col">사진</th>
+											<th scope="col">성명</th>
+											<th scope="col">회사</th>
+											<th scope="col">연락처</th>
+											<th scope="col">등록일</th>
+											<th scope="col">작성자</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="check_info">
+												<span>
+													<input id="chk_0" type="checkbox" name="chk[00]" value="" checked>
+													<label for="chk_0"></label>
+												</span>										
+											</td>
+											<td>10</td>
+											<td><img src="../img/common/no-image-sm.jpg"></td>
+											<td><a href="layout01_detail.html">심재윤</a></td>
+											<td>(주)PCN</td>
+											<td>010.1234.5678</td>
+											<td>2018.12.14</td>
+											<td>마스터</td>
+										</tr>
+										<tr>
+											<td class="check_info">
+												<span>
+													<input id="chk_1" type="checkbox" name="chk[01]" value="">
+													<label for="chk_1"></label>
+												</span>												
+											</td>
+											<td>9</td>
+											<td><img src="../img/common/no-image-sm.jpg"></td>
+											<td>심재윤</td>
+											<td>(주)PCN</td>
+											<td>010.1234.5678</td>
+											<td>2018.12.14</td>
+											<td>마스터</td>
+										</tr>
+										<tr>
+											<td class="check_info">
+												<span>
+													<input id="chk_2" type="checkbox" name="chk[02]" value="">
+													<label for="chk_2"></label>
+												</span>													
+											</td>
+											<td>8</td>
+											<td><img src="../img/common/no-image-sm.jpg"></td>
+											<td>심재윤</td>
+											<td>(주)PCN</td>
+											<td>010.1234.5678</td>
+											<td>2018.12.14</td>
+											<td>마스터</td>
+										</tr>
+										<tr>
+											<td class="check_info">
+												<span>
+													<input id="chk_3" type="checkbox" name="chk[03]" value="">
+													<label for="chk_3"></label>
+												</span>												
+											</td>
+											<td>7</td>
+											<td><img src="../img/common/no-image-sm.jpg"></td>
+											<td>심재윤</td>
+											<td>(주)PCN</td>
+											<td>010.1234.5678</td>
+											<td>2018.12.14</td>
+											<td>마스터</td>
+										</tr>
+										<tr>
+											<td class="check_info">
+												<span>
+													<input id="chk_4" type="checkbox" name="chk[04]" value="">
+													<label for="chk_4"></label>
+												</span>													
+											</td>
+											<td>6</td>
+											<td><img src="../img/common/no-image-sm.jpg"></td>
+											<td>심재윤</td>
+											<td>(주)PCN</td>
+											<td>010.1234.5678</td>
+											<td>2018.12.14</td>
+											<td>마스터</td>
+										</tr>
+										<tr>
+											<td class="check_info">
+												<span>
+													<input id="chk_5" type="checkbox" name="chk[05]" value="">
+													<label for="chk_5"></label>
+												</span>													
+											</td>
+											<td>5</td>
+											<td><img src="../img/common/no-image-sm.jpg"></td>
+											<td>심재윤</td>
+											<td>(주)PCN</td>
+											<td>010.1234.5678</td>
+											<td>2018.12.14</td>
+											<td>마스터</td>
+										</tr>
+										<tr>
+											<td class="check_info">
+												<span>
+													<input id="chk_6" type="checkbox" name="chk[06]" value="">
+													<label for="chk_6"></label>
+												</span>													
+											</td>
+											<td>4</td>
+											<td><img src="../img/common/no-image-sm.jpg"></td>
+											<td>심재윤</td>
+											<td>(주)PCN</td>
+											<td>010.1234.5678</td>
+											<td>2018.12.14</td>
+											<td>마스터</td>
+										</tr>
+										<tr>
+											<td class="check_info">
+												<span>
+													<input id="chk_7" type="checkbox" name="chk[07]" value="">
+													<label for="chk_7"></label>
+												</span>													
+											</td>
+											<td>3</td>
+											<td><img src="../img/common/no-image-sm.jpg"></td>
+											<td>심재윤</td>
+											<td>(주)PCN</td>
+											<td>010.1234.5678</td>
+											<td>2018.12.14</td>
+											<td>마스터</td>
+										</tr>
+										<tr>
+											<td class="check_info">
+												<span>
+													<input id="chk_8" type="checkbox" name="chk[08]" value="">
+													<label for="chk_8"></label>
+												</span>													
+											</td>
+											<td>2</td>
+											<td><img src="../img/common/no-image-sm.jpg"></td>
+											<td>심재윤</td>
+											<td>(주)PCN</td>
+											<td>010.1234.5678</td>
+											<td>2018.12.14</td>
+											<td>마스터</td>
+										</tr>
+										<tr>
+											<td class="check_info">
+												<span>
+													<input id="chk_9" type="checkbox" name="chk[09]" value="">
+													<label for="chk_9"></label>
+												</span>													
+											</td>
+											<td>1</td>
+											<td><img src="../img/common/no-image-sm.jpg"></td>
+											<td>심재윤</td>
+											<td>(주)PCN</td>
+											<td>010.1234.5678</td>
+											<td>2018.12.14</td>
+											<td>마스터</td>
+										</tr>
+									</tbody>
+								</table>
+							</div><!--table_type01-->
+						</form>
+					</div>
+					<div class="btnWrap alignR">
+						<button type="button" class="button">선택삭제</button>
+						<a href="layout01_register.html" class="button-red">등록</a>	
+					</div>
+					<div class="paging">
+						<span class="first"><a href="#"><img src="../img/common/bg_first.png" alt="처음"></a></span>
+						<span class="prev"><a href="#"><img src="../img/common/bg_prev.png" alt="이전"></a></span>
+						<ul>
+							<li><a href="#" class="selected">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">6</a></li>
+							<li><a href="#">7</a></li>
+							<li><a href="#">8</a></li>
+							<li><a href="#">9</a></li>
+							<li><a href="#">10</a></li>
+						</ul>
+						<span class="next"><a href=""><img src="../img/common/bg_nxt.png" alt="다음"></a></span>
+						<span class="end"><a href=""><img src="../img/common/bg_end.png" alt="끝"></a></span>
+					</div>
+				</main>
+			</div>		
+		</div>
+	</body>
+</html>	
+	  	

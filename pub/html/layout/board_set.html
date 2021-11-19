@@ -1,0 +1,342 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>게시판 설정</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<script src="../js/jquery-1.11.3.min.js"></script>
+		<script src="../js/jquery.easing.1.3.min.js"></script>
+		<script src="../js/common.js"></script>
+		<link rel="stylesheet" href="../css/feCommon.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR" rel="stylesheet">
+	</head>
+	<body>	
+		<div id="wrap">
+			<a href="#content" class="skipToContent">본문으로 바로가기</a>
+			<!--#header -->
+			<header id="header" class="header">
+				<h1 class="logo"><a href="main.html"><img src="../img/common/logo.png" alt="11번가"></a></h1>
+				<div class="searchWrap">
+					<h2 class="hideEl">전체검색</h2>
+					<form action="/" method="">
+						<fieldset>
+							<legend>전체 검색</legend>
+							<label for="totSearchInp" class="hideEl">검색어 입력</label>
+							<input type="text" id="totSearchInp" class="totSearchInp" title="전체 검색" placeholder="검색어를 입력해주세요.">
+							<button type="submit" class="hideTxt">검색</button>
+						</fieldset>
+					</form>
+				</div>
+					
+				<div class="gnbWrap">
+					<div class="topMenuWrap">
+						<span>
+							<img src="https://dummyimage.com/60x60/e0002a/fff" alt="">
+						</span>
+						<span class="user">
+							<strong>심재윤 님</strong>
+							환영합니다!
+						</span>
+						<!-- topMenu -->
+						<ul class="topMenu">
+							<li><a href="/">정보수정</a></li>
+							<li><a href="/">로그아웃</a></li>
+						</ul>
+						<!-- //topMenu -->
+					</div> 					
+					<nav class="gnb">
+						<h2 class="hideEl">메뉴 네비게이션</h2>
+						<ul class="gnbList">
+							<li><a href="layout01_list.html">언론정보</a></li>
+							<li><a href="layout02_list.html">보도자료</a></li>
+							<li><a href="layout03_list.html">취재협조</a></li>
+							<li><a href="layout04_list.html">ISSUE</a></li>
+							<li><a href="layout05_list.html">참고자료</a></li>
+							<li><a href="layout06_list.html">동향</a></li>
+							<li><a href="member_list.html">계정관리</a></li>
+							<li class="current">
+								<a href="javascript:return false;">설정</a>
+								<ul>
+									<li class="on"><a href="board_list.html">게시판 관리</a></li>
+									<li><a href="menu_list.html">메뉴 관리</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<p class="copyright">Copyright © 2018 11Street<br>Co.,Ltd. All Rights Reserved.</p>
+				</div>	
+			</header>		
+			<!--//#header-->
+
+			<div id="container">
+				<main id="content" class="mainCont">
+					<div class="heading heading-depth01">
+						<h2 class="title">게시판 설정</h2>
+					</div>
+					<div class="listBoard">
+						<div class="subBoard mr_b">
+							<ol>
+								<li>1. 게시판 코드는 자동으로 생성되며 변경이 불가합니다.</li>	
+								<li>2. [저장] 버튼을 클릭하시면 입력하신 설정 정보가 저장됩니다.</li>
+								<li>3. [취소] 버튼을 클릭하시면 목록화면으로 이동됩니다.</li>
+							</ol>
+						</div>	
+
+						<form action="/" method="">
+							<div class="table_type02">
+								<table cellspacing='0' cellpadding='0' border="0">
+									<colgroup>
+										<col style="width:167px"></col>
+										<col></col>
+										<col style="width:167px"></col>
+										<col></col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row"><div>게시판 코드</div></th>	
+											<td colspan="3"><div><input type="text" value=""></div></td>	
+										</tr>
+										<tr>
+											<th scope="row"><div>게시판 명</div></th>	
+											<td colspan="3"><div><input type="text" value=""></div></td>	
+										</tr>
+										<tr>
+											<th scope="row"><div>게시판 타입</div></th>	
+											<td colspan="3" class="board_set">
+												<span class="set_type">
+													<input id="r_ch01" name="Type" type="radio" value="">
+													<label for="r_ch01">인력관리 게시판</label>
+												</span>
+												<span class="set_type">
+													<input id="r_ch02" name="Type" type="radio" value="">
+													<label for="r_ch02">이미지 게시판</label>
+												</span>
+												<span class="set_type">
+													<input id="r_ch03" name="Type" type="radio" value="" checked>
+													<label for="r_ch03">일반 게시판</label>
+												</span>
+											</td>	
+										</tr>
+										<tr>
+											<th scope="row"><div>파일첨부</div></th>	
+											<td class="board_set">
+												<span class="set_type">
+													<input id="r_ch04" name="able1" type="radio" value="">
+													<label for="r_ch04">사용</label>
+												</span>
+												<span class="set_type">
+													<input id="r_ch05" name="able1" type="radio" value="" checked>
+													<label for="r_ch05">미사용</label>
+												</span>
+											</td>
+											<th scope="row"><div>파일첨부 갯수제한</div></th>	
+											<td>
+												<select class="small">
+													<option value="">1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</td>	
+										</tr>
+										<tr>
+											<th scope="row"><div>게시글 수정</div></th>	
+											<td class="board_set">
+												<span class="set_type">
+													<input id="r_ch06" name="modify1" type="radio" value="" checked>
+													<label for="r_ch06">전체</label>
+												</span>
+												<span class="set_type">
+													<input id="r_ch07" name="modify1" type="radio" value="">
+													<label for="r_ch07">작성자만</label>
+												</span>
+												<span class="set_type">
+													<input id="r_ch08" name="modify1" type="radio" value="">
+													<label for="r_ch08">최고관리자 + 작성자</label>
+												</span>
+											</td>
+											<th scope="row"><div>게시글 삭제</div></th>	
+											<td class="board_set">
+												<span class="set_type">
+													<input id="r_ch09" name="modify2" type="radio" value="" checked>
+													<label for="r_ch09" >전체</label>
+												</span>
+												<span class="set_type">
+													<input id="r_ch10" name="modify2" type="radio" value="">
+													<label for="r_ch10">작성자만</label>
+												</span>
+												<span class="set_type">
+													<input id="r_ch11" name="modify2" type="radio" value="">
+													<label for="r_ch11">최고관리자 + 작성자</label>
+												</span>
+											</td>	
+										</tr>
+										<tr>
+											<th scope="row"><div>댓글</div></th>	
+											<td colspan="3" class="board_set">
+												<span class="set_type">
+													<input id="r_ch12" name="able2" type="radio" value="">
+													<label for="r_ch12">사용</label>
+												</span>
+												<span class="set_type">
+													<input id="r_ch13" name="able2" type="radio" value="" checked>
+													<label for="r_ch13">미사용</label>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><div>리스트설정</div></th>	
+											<td colspan="3" class="board_set">
+												<span class="set_type">
+													<input id="r_ch14" name="able3" type="radio" value="" checked>
+													<label for="r_ch14">업데이트순</label>
+												</span>
+												<span class="set_type">
+													<input id="r_ch15" name="able3" type="radio" value="">
+													<label for="r_ch15">등록일 기준</label>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><div>페이징</div></th>	
+											<td class="board_set">
+												<span class="set_type">
+													<input id="r_ch16" name="able4" type="radio" value="">
+													<label for="r_ch16">사용</label>
+												</span>
+												<span class="set_type">
+													<input id="r_ch17" name="able4" type="radio" value="" checked>
+													<label for="r_ch17">미사용</label>
+												</span>
+											</td>
+											<th scope="row"><div>페이징 설정</div></th>	
+											<td>
+												<span class="title">목록수&nbsp;:&nbsp;</span>
+												<select class="small">
+													<option value="">1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+												<span class="title">페이징 블록 수&nbsp;:&nbsp;</span>
+												<select class="small">
+													<option value="">1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+											</td>
+										</tr>
+										<tr>																			
+											<th scope="row"><div>사용여부</div></th>	
+											<td colspan="3" class="board_set">
+												<span class="set_type">
+													<input id="r_ch18" name="able5" type="radio" value="">
+													<label for="r_ch18">사용</label>
+												</span>
+												<span class="set_type">
+													<input id="r_ch19" name="able5" type="radio" value="" checked>
+													<label for="r_ch19">미사용</label>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" rowspan="3"><div>카테고리 설정</div></th>	
+											<td colspan="3">
+												<span class="button-white" onclick="layer_pop();">카테고리 등록</span>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="3">
+												<ul class="upload_file2">
+													<li>카테고리1</li>
+													<li>카테고리2</li>
+												</ul>	
+											</td>	
+										</tr>
+										<tr>
+											<td colspan="3">
+												<ol class="txt_info">
+													<li>※ [카테고리 등록] 버튼을 클릭 하신 후 카테고리 등록, 순서변경, 삭제가 가능합니다.</li>
+													<li>※ 카테고리를 삭제한 경우 <strong>등록한 게시글들이 삭제될 수 있으니 신중히 사용</strong>바랍니다.</li>
+												</ol>	
+											</td>	
+										</tr>
+									</tbody>
+								</table>
+							</div><!--table_type02-->
+						</form>
+					</div>
+					<div class="btnWrap whitearea alignR">
+						<a href="board_list.html" class="button">취소</a>
+						<button type="button" class="button-red">저장</button>	
+					</div>
+				</main>
+			</div>		
+		</div><!--//wrap-->
+		<div class="set_board_popup">
+			<h3 class="title">카테고리 관리</h3>
+			<span class="btn_close" onclick="layer_pop();"><img src="../img/common/btn_close.png"></span>
+			<div class="subBoard">
+				<div class="cate_name"><span>카테고리 명</span><input type="text" class=""><button type="submit" class="button">등록</button></div>
+				<div class="cate_list"><span>카테고리 목록</span></div>
+				<div class="max_area">
+					<ul class="category">
+						<li>
+							<div class="listname">십일절</div>
+							<span class="up"><a href="#" onclick="change_list(this,'up');"><img src="../img/common/bg_arr_up.png"></a></span>
+							<span class="down"><a href="#" onclick="change_list(this,'down');"><img src="../img/common/bg_arr_down.png"></a></span>
+							<span class="del"><a href="#" onclick="remove(this);"><img src="../img/common/btn_close2.png"></a></span>
+						</li>
+						<li>
+							<div class="listname">거래액&#x2F;실적</div>
+							<span class="up"><a href="#" onclick="change_list(this,'up');"><img src="../img/common/bg_arr_up.png"></a></span>
+							<span class="down"><a href="#" onclick="change_list(this,'down');"><img src="../img/common/bg_arr_down.png"></a></span>
+							<span class="del"><a href="#" onclick="remove(this);"><img src="../img/common/btn_close2.png"></a></span>
+						</li>
+						<li>
+							<div class="listname">Negative</div>
+							<span class="up"><a href="#" onclick="change_list(this,'up');"><img src="../img/common/bg_arr_up.png"></a></span>
+							<span class="down"><a href="#" onclick="change_list(this,'down');"><img src="../img/common/bg_arr_down.png"></a></span>
+							<span class="del"><a href="#" onclick="remove(this);"><img src="../img/common/btn_close2.png"></a></span>
+						</li>
+						<li>
+							<div class="listname">정책</div>
+							<span class="up"><a href="#" onclick="change_list(this,'up');"><img src="../img/common/bg_arr_up.png"></a></span>
+							<span class="down"><a href="#" onclick="change_list(this,'down');"><img src="../img/common/bg_arr_down.png"></a></span>
+							<span class="del"><a href="#" onclick="remove(this);"><img src="../img/common/btn_close2.png"></a></span>
+						</li>
+						<li>
+							<div class="listname">경쟁사</div>
+							<span class="up"><a href="#" onclick="change_list(this,'up');"><img src="../img/common/bg_arr_up.png"></a></span>
+							<span class="down"><a href="#" onclick="change_list(this,'down');"><img src="../img/common/bg_arr_down.png"></a></span>
+							<span class="del"><a href="#" onclick="remove(this);"><img src="../img/common/btn_close2.png"></a></span>
+						</li>
+						<li>
+							<div class="listname">기타1</div>
+							<span class="up"><a href="#" onclick="change_list(this,'up');"><img src="../img/common/bg_arr_up.png"></a></span>
+							<span class="down"><a href="#" onclick="change_list(this,'down');"><img src="../img/common/bg_arr_down.png"></a></span>
+							<span class="del"><a href="#" onclick="remove(this);"><img src="../img/common/btn_close2.png"></a></span>
+						</li>
+						<li>
+							<div class="listname">기타2</div>
+							<span class="up"><a href="#" onclick="change_list(this,'up');"><img src="../img/common/bg_arr_up.png"></a></span>
+							<span class="down"><a href="#" onclick="change_list(this,'down');"><img src="../img/common/bg_arr_down.png"></a></span>
+							<span class="del"><a href="#" onclick="remove(this);"><img src="../img/common/btn_close2.png"></a></span>
+						</li>
+					</ul>
+				</div>
+				<div class="btnWrap">
+					<button type="button" class="button-red">저장</button>
+					<a href="javascript:return false;" onclick="layer_pop();" class="button">취소</a>	
+				</div>					
+			</div>
+		</div>
+		<div class="bg_dark" onclick="layer_pop();"></div>
+	</body>
+</html>	
+	  	

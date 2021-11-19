@@ -1,0 +1,349 @@
+<!DOCTYPE html> 
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>통합검색</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<script src="../js/jquery-1.11.3.min.js"></script>
+		<script src="../js/jquery.easing.1.3.min.js"></script>
+		<script src="../js/common.js"></script>
+		<link rel="stylesheet" href="../css/feCommon.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR" rel="stylesheet">
+	</head>
+	<body>	
+		<div id="wrap">
+			<a href="#content" class="skipToContent">본문으로 바로가기</a>
+			<!-- #header -->
+			<header id="header" class="header">
+				<h1 class="logo"><a href="main.html"><img src="../img/common/logo.png" alt="11번가"></a></h1>
+				<div class="searchWrap">
+					<h2 class="hideEl">전체검색</h2>
+					<form action="/" method="">
+						<fieldset>
+							<legend>전체 검색</legend>
+							<label for="totSearchInp" class="hideEl">검색어 입력</label>
+							<input type="text" id="totSearchInp" class="totSearchInp" title="전체 검색" placeholder="검색어를 입력해주세요.">
+							<button type="submit" class="hideTxt">검색</button>
+						</fieldset>
+					</form>
+				</div>
+					
+				<div class="gnbWrap">
+					<div class="topMenuWrap">
+						<span>
+							<img src="https://dummyimage.com/60x60/e0002a/fff" alt="">
+						</span>
+						<span class="user">
+							<strong>심재윤 님</strong>
+							환영합니다!
+						</span>
+						<!-- topMenu -->
+						<ul class="topMenu">
+							<li><a href="/">정보수정</a></li>
+							<li><a href="/">로그아웃</a></li>
+						</ul>
+						<!-- //topMenu -->
+					</div> 
+					
+					<nav class="gnb">
+						<h2 class="hideEl">메뉴 네비게이션</h2>
+						<ul class="gnbList">
+							<li><a href="layout01_list.html">언론정보</a></li>
+							<li><a href="layout02_list.html">보도자료</a></li>
+							<li><a href="layout03_list.html">취재협조</a></li>
+							<li><a href="layout04_list.html">ISSUE</a></li>
+							<li><a href="layout05_list.html">참고자료</a></li>
+							<li><a href="layout06_list.html">동향</a></li>
+							<li><a href="member_list.html">계정관리</a></li>
+							<li>
+								<a href="javascript:return false;">설정</a>
+								<ul>
+									<li><a href="board_list.html">게시판 관리</a></li>
+									<li><a href="menu_list.html">메뉴 관리</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<p class="copyright">Copyright © 2018 11Street<br>Co.,Ltd. All Rights Reserved.</p>
+				</div>	
+			</header>		
+			<!--// #header -->
+
+			<div id="container">
+				<main id="content" class="mainCont">
+					<div class="heading heading-depth01">
+						<h2 class="title">통합검색</h2>
+					</div>
+					<div class="searchBoard">					
+						<div class="subBoard">
+							<form action="/" method="">
+								<div class="searchWrap2">
+									<div class="searchArea">
+										<h2 class="hideEl">전체검색</h2>
+										<fieldset>
+											<legend>전체 검색</legend>
+											<label for="totSearchInp2" class="hideEl">검색어 입력</label>
+											<input type="text" id="totSearchInp2" class="totSearchInp2" title="전체 검색" placeholder="11번가">
+											<button type="submit" class="hideTxt">검색</button>
+										</fieldset>
+									</div>
+									<div class="right">
+										<span class="set_check none">
+											<input id="within_result" type="checkbox" name="" value="">
+											<label for="within_result">결과 내 재검색</label>	
+										</span>
+									</div>
+								</div>
+								<!--//searchWrap2-->
+							</form>
+
+							<p class="txt_result"><b>11번가</b>에 대한 총 <b>000</b>건이 검색되었습니다.</p>
+							<div class="list_tab">
+								<ul>
+									<li class="current"><a href="#">전체(00)</a></li>
+									<li><a href="#">언론정보(00)</a></li>
+									<li><a href="#">보도자료(00)</a></li>
+									<li><a href="#">취재협조(00)</a></li>
+									<li><a href="#">ISSUE(00)</a></li>
+									<li><a href="#">참고자료(00)</a></li>
+									<li><a href="#">동향(00)</a></li>	
+								</ul>
+							</div>
+							<!--리스트 타입-->
+							<div class="list_type">
+								<span class="set_type">
+									<input id="list_type01" name="list_type" type="radio" value="" checked>
+									<label for="list_type01">정확도순</label>
+								</span>
+								<span class="set_type">
+									<input id="list_type02" name="list_type" type="radio" value="">
+									<label for="list_type02">최신순</label>
+								</span>	
+							</div>												
+							<div class="more">
+								<span class="title">기자정보(6)</span>
+								<a href="search_detail02.html" class="btn_more">검색결과 더보기</a>	
+							</div>
+							
+							<!--기자정보 리스트-->
+							<div class="list_item01">
+								<ul>
+									<li>
+										<div class="border">
+											<div class="img">
+												<img src="../img/common/no-image.jpg" alt="">
+											</div>
+											<div class="info">
+												<p class="ellipsis">심재윤</p>
+												<p class="ellipsis">회사명 : PCN</p>
+												<p class="ellipsis">연락처 : 010-0000-00000000000000</p>
+												<a href="/" class="button_type01 button-white">프로필 보기</a>
+											</div>
+											<div class="summary ellipsis">메모
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="border">
+											<div class="img">
+												<img src="../img/common/no-image.jpg" alt="">
+											</div>
+											<div class="info">
+												<p class="ellipsis">심재윤</p>
+												<p class="ellipsis">회사명 : PCN</p>
+												<p class="ellipsis">연락처 : 010-0000-00000000000000</p>
+												<a href="/" class="button_type01 button-white">프로필 보기</a>
+											</div>
+											<div class="summary ellipsis">메모
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="border">
+											<div class="img">
+												<img src="../img/common/no-image.jpg" alt="">
+											</div>
+											<div class="info">
+												<p class="ellipsis">심재윤</p>
+												<p class="ellipsis">회사명 : PCN</p>
+												<p class="ellipsis">연락처 : 010-0000-00000000000000</p>
+												<a href="/" class="button_type01 button-white">프로필 보기</a>
+											</div>
+											<div class="summary ellipsis">메모
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="border">
+											<div class="img">
+												<img src="../img/common/no-image.jpg" alt="">
+											</div>
+											<div class="info">
+												<p class="ellipsis">심재윤</p>
+												<p class="ellipsis">회사명 : PCN</p>
+												<p class="ellipsis">연락처 : 010-0000-00000000000000</p>
+												<a href="/" class="button_type01 button-white">프로필 보기</a>
+											</div>
+											<div class="summary ellipsis">메모
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="border">
+											<div class="img">
+												<img src="../img/common/no-image.jpg" alt="">
+											</div>
+											<div class="info">
+												<p class="ellipsis">심재윤</p>
+												<p class="ellipsis">회사명 : PCN</p>
+												<p class="ellipsis">연락처 : 010-0000-00000000000000</p>
+												<a href="/" class="button_type01 button-white">프로필 보기</a>
+											</div>
+											<div class="summary ellipsis">메모
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="border">
+											<div class="img">
+												<img src="../img/common/no-image.jpg" alt="">
+											</div>
+											<div class="info">
+												<p class="ellipsis">심재윤</p>
+												<p class="ellipsis">회사명 : PCN</p>
+												<p class="ellipsis">연락처 : 010-0000-00000000000000</p>
+												<a href="/" class="button_type01 button-white">프로필 보기</a>
+											</div>
+											<div class="summary ellipsis">메모
+											</div>
+										</div>
+									</li>										
+								</ul>
+							</div>
+							<!--//list_item01-->
+							<div class="more">
+								<span class="title">보도자료(8)</span>
+								<a href="search_detail01.html" class="btn_more">검색결과 더보기</a>	
+							</div>
+							<div class="list_item02">
+								<!--이미지 미포함 자료 리스트-->
+								<div class="item">
+									<div class="info">
+										<span>11번가 보도자료 제목</span>
+										<span class="date">작성일&nbsp;:&nbsp;2018.12.19&nbsp;&nbsp;16:34</span>
+										<span class="author">작성자:마스터</span>	
+									</div>
+									<p class="ellipsis">11번가는 크리스마스를 기념하여 대고객 할인 프로모션을 진행 하였다  / 11번가는  크리스마스를 기념하여 대고객 할인 프로모션을 진행 하였다. 크리스마스를 기념하여 대고객 할인 프로모션을 진행 하였다. 크리스마스를 기념하여 대고객ddddd</p>
+									<div class="bg_gray">
+										<div class="file_name"><a href="#">11번가 보도자료.ppt</a></div>
+										<div class="summary ellipsis">
+										자료 내 검색어 포함시 노출
+										</div>	
+									</div>
+									<div class="bg_gray">
+										<div class="file_name"><a href="#">11번가 보도자료.ppt</a></div>
+										<div class="summary ellipsis">
+										자료 내 검색어 포함시 노출
+										</div>	
+									</div>
+								</div>
+								
+								<div class="item">
+									<div class="info">
+										<span>11번가 보도자료 제목</span>
+										<span class="date">작성일&nbsp;:&nbsp;2018.12.19&nbsp;&nbsp;16:34</span>
+										<span class="author">작성자:마스터</span>	
+									</div>
+									<p class="ellipsis">11번가는 크리스마스를 기념하여 대고객 할인 프로모션을 진행 하였다  / 11번가는  크리스마스를 기념하여 대고객 할인 프로모션을 진행 하였다. 크리스마스를 기념하여 대고객 할인 프로모션을 진행 하였다. 크리스마스를 기념하여 대고객dddd</p>
+									<div class="bg_gray">
+										<div class="file_name"><a href="#">11번가 보도자료.ppt</a></div>
+										<div class="summary ellipsis" style="display:none">
+										자료내 검색어 포함시 노출
+										</div>	
+									</div>
+								</div>
+
+								<!--이미지 포함 자료 리스트-->
+								<div class="item image">
+									<div class="img"><img src="../img/common/no-image-wide.jpg" alt=""></div>
+									<div class="info">
+										<span>11번가 보도자료 제목</span>
+										<span class="date">작성일&nbsp;:&nbsp;2018.12.19&nbsp;&nbsp;16:34</span>
+										<span class="author">작성자:마스터</span>	
+									</div>
+									<p class="ellipsis">11번가는 크리스마스를 기념하여 대고객 할인 프로모션을 진행 하였다  / 11번가는  크리스마스를 기념하여 대고객 할인 프로모션을 진행 하였다. 크리스마스를 기념하여 대고객 할인 프로모션을 진행 하였다. 크리스마스를 기념하여 대고객dddd</p>
+									<div class="bg_gray">
+										<div class="file_name"><a href="#">11번가 보도자료.ppt</a></div>
+										<div class="summary ellipsis">
+										자료내 검색어 포함시 노출
+										</div>	
+									</div>
+								</div>																			
+							</div>
+							<!--//list_item02-->
+							<div class="more">
+								<span class="title">취재협조(8)</span>
+								<a href="search_detail01.html" class="btn_more">검색결과 더보기</a>	
+							</div>
+							<div class="list_item02">
+								<!--이미지 미포함 자료 리스트-->
+								<div class="item">
+									<div class="info">
+										<span>11번가 보도자료 제목</span>
+										<span class="date">작성일&nbsp;:&nbsp;2018.12.19&nbsp;&nbsp;16:34</span>
+										<span class="author">작성자:마스터</span>	
+									</div>
+									<p class="ellipsis">11번가는 크리스마스를 기념하여 대고객 할인 프로모션을 진행 하였다  / 11번가는  크리스마스를 기념하여 대고객 할인 프로모션을 진행 하였다. 크리스마스를 기념하여 대고객 할인 프로모션을 진행 하였다. 크리스마스를 기념하여 대고객ddddd</p>
+									<div class="bg_gray">
+										<div class="file_name"><a href="#">11번가 보도자료.ppt</a></div>
+										<div class="summary ellipsis">
+										자료 내 검색어 포함시 노출
+										</div>	
+									</div>
+									<div class="bg_gray">
+										<div class="file_name"><a href="#">11번가 보도자료.ppt</a></div>
+										<div class="summary ellipsis">
+										자료 내 검색어 포함시 노출
+										</div>	
+									</div>
+								</div>
+								
+								<div class="item">
+									<div class="info">
+										<span>11번가 보도자료 제목</span>
+										<span class="date">작성일&nbsp;:&nbsp;2018.12.19&nbsp;&nbsp;16:34</span>
+										<span class="author">작성자:마스터</span>	
+									</div>
+									<p class="ellipsis">11번가는 크리스마스를 기념하여 대고객 할인 프로모션을 진행 하였다  / 11번가는  크리스마스를 기념하여 대고객 할인 프로모션을 진행 하였다. 크리스마스를 기념하여 대고객 할인 프로모션을 진행 하였다. 크리스마스를 기념하여 대고객dddd</p>
+									<div class="bg_gray">
+										<div class="file_name"><a href="#">11번가 보도자료.ppt</a></div>
+										<div class="summary ellipsis" style="display:none">
+										자료내 검색어 포함시 노출
+										</div>	
+									</div>
+								</div>
+								<div class="item">
+									<div class="info">
+										<span>11번가 보도자료 제목</span>
+										<span class="date">작성일&nbsp;:&nbsp;2018.12.19&nbsp;&nbsp;16:34</span>
+										<span class="author">작성자:마스터</span>	
+									</div>
+									<p class="ellipsis">11번가는 크리스마스를 기념하여 대고객 할인 프로모션을 진행 하였다  / 11번가는  크리스마스를 기념하여 대고객 할인 프로모션을 진행 하였다. 크리스마스를 기념하여 대고객 할인 프로모션을 진행 하였다. 크리스마스를 기념하여 대고객dddd</p>
+									<div class="bg_gray">
+										<div class="file_name"><a href="#">11번가 보도자료.ppt</a></div>
+										<div class="summary ellipsis" style="display:none">
+										자료내 검색어 포함시 노출
+										</div>	
+									</div>
+								</div>																			
+							</div>
+							<!--//list_item02-->							
+						</div>
+					</div>
+				</main>
+			</div>		
+		</div>
+	</body>
+</html>	
+	  	
